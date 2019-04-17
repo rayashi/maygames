@@ -16,5 +16,15 @@ class GameTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
     }
+    
+    func prepare(with game: Game) {
+        lbName.text = game.title
+        lbConsole.text = game.console?.name ?? ""
+        if let image = game.cover as? UIImage {
+            lbImage.image = image
+        } else {
+            lbImage.image = UIImage(named: "noCover")
+        }
+    }
 
 }

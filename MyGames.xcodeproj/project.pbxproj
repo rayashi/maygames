@@ -20,6 +20,7 @@
 		5C51ED1822669C4F003AA7DF /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C51ED1722669C4F003AA7DF /* GameViewController.swift */; };
 		5C51ED1A22669C7D003AA7DF /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C51ED1922669C7D003AA7DF /* EditViewController.swift */; };
 		5C51ED1C22669DD3003AA7DF /* GameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C51ED1B22669DD3003AA7DF /* GameTableViewCell.swift */; };
+		5C51ED1E2266A702003AA7DF /* UIViewController+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C51ED1D2266A702003AA7DF /* UIViewController+CoreData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		5C51ED1722669C4F003AA7DF /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		5C51ED1922669C7D003AA7DF /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		5C51ED1B22669DD3003AA7DF /* GameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewCell.swift; sourceTree = "<group>"; };
+		5C51ED1D2266A702003AA7DF /* UIViewController+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+CoreData.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				5C51ECE222668B19003AA7DF /* AppDelegate.swift */,
 				5C51ECE422668B19003AA7DF /* ViewController.swift */,
 				5C51ECE622668B19003AA7DF /* Main.storyboard */,
+				5C51ED1D2266A702003AA7DF /* UIViewController+CoreData.swift */,
 				5C51ED1922669C7D003AA7DF /* EditViewController.swift */,
 				5C51ED1B22669DD3003AA7DF /* GameTableViewCell.swift */,
 				5C51ED1722669C4F003AA7DF /* GameViewController.swift */,
@@ -277,6 +280,7 @@
 				5C51ECE522668B19003AA7DF /* ViewController.swift in Sources */,
 				5C51ED1422669BDD003AA7DF /* GamesTableViewController.swift in Sources */,
 				5C51ECE322668B19003AA7DF /* AppDelegate.swift in Sources */,
+				5C51ED1E2266A702003AA7DF /* UIViewController+CoreData.swift in Sources */,
 				5C51ECEB22668B19003AA7DF /* MyGames.xcdatamodeld in Sources */,
 				5C51ED1822669C4F003AA7DF /* GameViewController.swift in Sources */,
 				5C51ED1622669BEE003AA7DF /* ConsolesTableViewController.swift in Sources */,
