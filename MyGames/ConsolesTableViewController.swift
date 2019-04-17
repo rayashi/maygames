@@ -9,43 +9,57 @@
 import UIKit
 
 class ConsolesTableViewController: UITableViewController {
+    
+    let consolesManager = ConsolesManager.shared
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        loadConsoles()
     }
-
+    
+    func loadConsoles() {
+        consolesManager.loadConsoles(with: context)
+        tableView.reloadData()
+    }
     // MARK: - Table view data source
 
     @IBAction func addConsole(_ sender: UIBarButtonItem) {
-        
+        showConsoleAlert(with: nil)
     }
     
-    
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+    func showConsoleAlert(with console: Console?) {
+        let title = console == nil ? "Adicionar Console" : "Editar Console"
+        let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
+        alert.addTextField { textField in
+            textField.placeholder = "Nome do console"
+            textField.text = console != nil ? console?.name : ""
+        }
+        alert.addAction(UIAlertAction(title: title, style: .default, handler: { action in
+            let console = console ?? Console(context: self.context)
+            console.name = alert.textFields?.first?.text
+            do {
+                try self.context.save()
+                self.loadConsoles()
+            } catch {
+                print(error.localizedDescription)
+            }
+            
+            
+        }))
+        alert.addAction(UIAlertAction(title: "Cancelar", style: .cancel, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return consolesManager.consoles.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = consolesManager.consoles[indexPath.row].name
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
