@@ -47,6 +47,7 @@ class ConsolesTableViewController: UITableViewController {
             
         }))
         alert.addAction(UIAlertAction(title: "Cancelar", style: .cancel, handler: nil))
+        alert.view.tintColor = UIColor(named: "color-secondary")
         present(alert, animated: true, completion: nil)
     }
 
