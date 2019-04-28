@@ -22,6 +22,7 @@
 		5C51ED1A22669C7D003AA7DF /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C51ED1922669C7D003AA7DF /* EditViewController.swift */; };
 		5C51ED1C22669DD3003AA7DF /* GameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C51ED1B22669DD3003AA7DF /* GameTableViewCell.swift */; };
 		5C51ED1E2266A702003AA7DF /* UIViewController+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C51ED1D2266A702003AA7DF /* UIViewController+CoreData.swift */; };
+		5CCFAABA227619E7006648B6 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCFAAB9227619E7006648B6 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		5C51ED1922669C7D003AA7DF /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		5C51ED1B22669DD3003AA7DF /* GameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewCell.swift; sourceTree = "<group>"; };
 		5C51ED1D2266A702003AA7DF /* UIViewController+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+CoreData.swift"; sourceTree = "<group>"; };
+		5CCFAAB9227619E7006648B6 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				5C51ECEE22668B1A003AA7DF /* LaunchScreen.storyboard */,
 				5C51ECF122668B1A003AA7DF /* Info.plist */,
 				5C51ECE922668B19003AA7DF /* MyGames.xcdatamodeld */,
+				5CCFAAB9227619E7006648B6 /* CustomButton.swift */,
 			);
 			path = MyGames;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				5C51ECEB22668B19003AA7DF /* MyGames.xcdatamodeld in Sources */,
 				5C51ED1822669C4F003AA7DF /* GameViewController.swift in Sources */,
 				5C51ED1622669BEE003AA7DF /* ConsolesTableViewController.swift in Sources */,
+				5CCFAABA227619E7006648B6 /* CustomButton.swift in Sources */,
 				5C0C162A2267E31C0035DDA9 /* ConsolesManager.swift in Sources */,
 				5C51ED1A22669C7D003AA7DF /* EditViewController.swift in Sources */,
 				5C51ED1C22669DD3003AA7DF /* GameTableViewCell.swift in Sources */,
